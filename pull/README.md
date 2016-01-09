@@ -7,5 +7,5 @@ Steps to use this AWS function
 4. Create the pull function in the AWS lambda console at least once. Then the "lambda" script should work. 
 5. Configure the AWS command line (see http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) 
 6. Run ./lambda
-7. In the AWS Lambda console, hit test to see if it works
-8. Adjust pull code to point to your text field in your MongoDB collection
+7. Adjust pull code query to match your collection in your MongoDB 
+8. In the AWS Lambda console, hit test to see if it works
