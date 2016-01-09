@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+rm put.zip
+zip put.zip index.js
+zip put.zip package.json
+zip put.zip .env
+zip put.zip twit.pem
+zip -r put.zip node_modules 
+aws lambda update-function-code --function-name put --zip-file fileb://./put.zip

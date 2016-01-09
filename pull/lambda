@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+rm pull.zip
+zip pull.zip index.js
+zip pull.zip package.json
+zip pull.zip .env
+zip pull.zip twit.pem
+zip -r pull.zip node_modules 
+aws lambda update-function-code --function-name pull --zip-file fileb://./pull.zip

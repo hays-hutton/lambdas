@@ -1,0 +1,17 @@
+{
+  "name": "pull",
+  "version": "0.0.1",
+  "description": "pull records from mongo and invoke the put lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.26",
+    "dotenv": "^1.2.0",
+    "lodash": "^3.10.1",
+    "mongodb": "^2.1.2"
+  }
+}
